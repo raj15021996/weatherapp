@@ -1,38 +1,110 @@
+html{
+  font-size: 65.5%;
+}
 .App {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.wetherBg{
+  height: 90%;
+  width: 100%;
+  color:white;
+  position: absolute;
   display: flex;
-  flex-direction: column;
   align-items: center;
+  flex-direction: column;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.wetherResultBox{
+  margin: auto;
+  width: 80vw;
+  height: 78vh;
+  border: 1px solid white;
+}
+.weathorIcon{
+  margin-top: 2rem;
+  width: 100px;
+  height: 100px;
+}
+.weathorCity{
+  font-size: 4rem;
+  font-weight: bold;
+  
+}
+.weathorTemp{
+  font-size:5rem;
+  font-weight:bold;
+}
+.nav{
+  color:white;
+  background-color: rgba(0, 0, 0, 0.408);
+}
+.navHeading{
+  color:white;
+  font-size: 4rem;
+  font-weight: bold;
+}
+.card-1{
+  padding-left: 20px;
+  padding-right: 20px;
+  box-shadow: 0 0px 20px 0 rgba(0,0,0,0.2);
+  background-color: rgba(0,0,0,0.2);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.card-container{
+  display: flex;
+  justify-content: space-around;
+  
+}
+.inner2{
+ font-size: 4rem;
+ font-weight: bold;
+}
+.inner1{
+  font-size: 2rem;
+  font-weight: bold;
+}
+.innerContainer{
+  font-size: 2rem;
+  font-weight: bold;
+}
+@media (max-width:768px) {
+  .wetherResultBox{
+    margin: auto;
+    width: 80vw;
+    height: 60vh;
   }
-  to {
-    transform: rotate(360deg);
+  .card-1{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .weathorIcon{
+    margin-top: 2rem;
+    width: 50px;
+    height: 50px;
+  }
+  html{
+    font-size: 30%;
+  }
+  
+}
+@media (max-width:600px) {
+  .wetherResultBox{
+    margin: auto;
+    width: 80vw;
+    height: 60vh;
+  }
+  .card-1{
+    padding-left: 15px;
+    padding-right: 10px;
+  }
+  .weathorIcon{
+    margin-top: 2rem;
+    width: 35px;
+    height: 35px;
+  }
+
+  html{
+    font-size: 20%;
   }
 }
